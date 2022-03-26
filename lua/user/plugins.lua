@@ -117,6 +117,7 @@ return packer.startup(function(use)
     use("mrjones2014/legendary.nvim")
     use("karb94/neoscroll.nvim")
     use("tpope/vim-surround")
+    use("SmiteshP/nvim-gps")
 	-- use("gelguy/wilder.nvim") --  TODO: flashing bugs in buffer when searching
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
