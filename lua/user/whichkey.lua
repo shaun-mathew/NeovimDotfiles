@@ -159,7 +159,7 @@ local mappings = {
     },
     s = {
         -- avoid using spectre, file filtering is weird
-        name = "Search",
+        name = "Search (Not Recommended)",
         s = {"<cmd>lua require('spectre').open()<cr>", "Search and Replace Project"},
         w = {"<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Search and Replace Word"},
         f = {"<cmd>lua require('spectre').open_file_search()<cr>", "Search and Replace in File"},
@@ -168,11 +168,10 @@ local mappings = {
     t = {
         name = "Terminal",
         n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Launch Node" },
-        u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "Launch NCDU" },
-        t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Launch Htop" },
+        t = { "<cmd>ToggleTerm<cr>", "Toggle Terminal" },
         p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Launch Python" },
         f = { "<cmd>ToggleTerm direction=float<cr>", "Launch Floating Terminal" },
-        h = { "<cmd>ToggleTerm size=15 direction=horizontal<cr>", "Launch Horizontal Terminal" },
+        s = { "<cmd>ToggleTerm size=15 direction=horizontal<cr>", "Launch Horizontal Terminal" },
         v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Launch Vertical Terminal" },
     },
 
