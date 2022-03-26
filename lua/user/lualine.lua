@@ -7,7 +7,7 @@ local hide_in_width = function()
 	return vim.fn.winwidth(0) > 80
 end
 
-local gps = require("user.nvim-gps")
+local gps = require("nvim-gps")
 
 local diagnostics = {
 	"diagnostics",
