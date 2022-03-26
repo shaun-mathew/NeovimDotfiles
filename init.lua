@@ -31,4 +31,5 @@ require("user.better-escape")
 require("user.colorizer")
 require("user.neoscroll")
 require("user.neogit")
+require("user.zen")
 --require("user.wilder") flickering bug

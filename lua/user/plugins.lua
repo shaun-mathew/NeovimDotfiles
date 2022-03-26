@@ -118,12 +118,13 @@ return packer.startup(function(use)
     use("karb94/neoscroll.nvim")
     use("tpope/vim-surround")
     use("SmiteshP/nvim-gps")
-    use("Pocco81/TrueZen.nvim")
+    use("folke/zen-mode.nvim")
+    use("mfussenegger/nvim-dap")
+    use("rcarriga/nvim-dap-ui")
+    -- use("Pocco81/DAPInstall.nvim")
     -- TODO: Install following plugins
     -- https://github.com/pwntester/octo.nvim
     -- https://github.com/michaelb/sniprun
-    -- https://github.com/michaelb/sniprun
-    -- https://github.com/rcarriga/nvim-dap-ui
     -- https://github.com/Pocco81/DAPInstall.nvim
 	-- use("gelguy/wilder.nvim") --  TODO: flashing bugs in buffer when searching
 	-- Automatically set up your configuration after cloning packer.nvim
