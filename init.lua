@@ -31,4 +31,3 @@ require("user.magit")
 require("user.trouble")
 require("user.zen")
 require("user.session")
---require("user.wilder") flickering bug
