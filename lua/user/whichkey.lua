@@ -185,6 +185,8 @@ local mappings = {
         m = {"<cmd>MaximizerToggle<CR>", "Maximize Window Pane"},
     },
 
+    z = {"<cmd>TZAtaraxis<CR>", "Zen Mode"},
+
     ["?"] = {":Legendary<CR>", "Open Keymaps Helper"},
 }
 
