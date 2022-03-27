@@ -120,7 +120,8 @@ return packer.startup(function(use)
     use("SmiteshP/nvim-gps")
     use("folke/zen-mode.nvim")
     use("mfussenegger/nvim-dap")
-    use("rcarriga/nvim-dap-ui")
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    -- use{"theHamsta/nvim-dap-virtual-text", config = function() require("nvim-dap-virtual-text").setup() end}
     -- TODO: Install following plugins
     -- https://github.com/pwntester/octo.nvim
     -- https://github.com/michaelb/sniprun

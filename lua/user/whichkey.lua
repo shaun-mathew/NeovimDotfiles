@@ -87,6 +87,20 @@ local mappings = {
         k = { ":bprev<CR>", "Previous Buffer"},
     },
 
+    d = {
+        name = "Debug",
+        d = {"<cmd>lua require('dap').continue()<CR>", "Start Debugger"},
+        b = {"<cmd>lua require('dap').toggle_breakpoint()<CR>", "Toggle Breakpoint"},
+        c = {"<cmd>lua require('dap').close()<CR>", "Close Current Debugging Session"},
+        x = {"<cmd>lua require('dap').terminate()<CR>", "Terminate Current Debugging Session"},
+        j = {"<cmd>lua require('dap').step_into()<CR>", "Step Into"},
+        l = {"<cmd>lua require('dap').step_over()<CR>", "Step Over"},
+        k = {"<cmd>lua require('dap').terminate()<CR>", "Step Out"},
+        h = {"<cmd>lua require('dap').terminate()<CR>", "Step Back"},
+        B = {"<cmd>lua require('dap').clear_breakpoints()<CR>", "Clear Breakpoints"},
+        u = {"<cmd>lua require('dapui').toggle()<CR>", "Toggles Debugger UI"},
+    },
+
     f = {
         name = "Telescope",
         f = {"<cmd>Telescope find_files<cr>", "Find Files"},
