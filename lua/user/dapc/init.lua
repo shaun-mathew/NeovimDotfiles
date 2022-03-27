@@ -3,7 +3,7 @@ if not status_ok then
 	return
 end
 
-local config = require("user.dap.config")
+local config = require("user.dapc.config")
 
 debug.adapters = config["adapters"]
 debug.configurations = config["configurations"]
