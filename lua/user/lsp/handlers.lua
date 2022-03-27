@@ -65,8 +65,8 @@ local function lsp_keymaps(bufnr)
 
 	require("legendary").bind_keymaps({
 		{ "gD", ":lua vim.lsp.buf.declaration()<CR>", description = "Go to declaration", opts = opts },
-		{ "gd", ":lua vim.lsp.buf.declaration()<CR>", description = "Go to definition", opts = opts },
-		{ "<C-k>", ":lua vim.lsp.buf.declaration()<CR>", description = "Show signature hints", opts = opts },
+		{ "gd", ":lua vim.lsp.buf.definition()<CR>", description = "Go to definition", opts = opts },
+		{ "<C-k>", ":lua vim.lsp.buf.signature_help()<CR>", description = "Show signature hints", opts = opts },
 	})
 
 	-- vim.api.nvim_buf_set_keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>",opts)
