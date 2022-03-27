@@ -121,6 +121,7 @@ return packer.startup(function(use)
     use("folke/zen-mode.nvim")
     use("mfussenegger/nvim-dap")
     use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    use("jamestthompson3/nvim-remote-containers")
     -- use{"theHamsta/nvim-dap-virtual-text", config = function() require("nvim-dap-virtual-text").setup() end}
     -- TODO: Install following plugins
     -- https://github.com/pwntester/octo.nvim
