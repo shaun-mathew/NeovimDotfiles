@@ -81,6 +81,7 @@ return packer.startup(function(use)
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+    use("xiyaowong/telescope-emoji.nvim")
 
 	-- TreeSitter
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
