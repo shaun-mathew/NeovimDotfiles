@@ -44,7 +44,7 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- Have packer manage itself
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
-    use("stevearc/dressing.nvim")
+	use("stevearc/dressing.nvim")
 
 	-- colorschemes
 	use("lunarvim/colorschemes")
@@ -73,15 +73,15 @@ return packer.startup(function(use)
 	use("kevinhwang91/nvim-bqf") -- TODO: configure this.
 	use("j-hui/fidget.nvim")
 	use("tami5/lspsaga.nvim")
-    use("simrat39/symbols-outline.nvim")
+	use("simrat39/symbols-outline.nvim")
 	-- https://github.com/ray-x/navigator.lua -- Did not like
 	-- https://github.com/rcarriga/nvim-dap-ui
 	-- https://github.com/gabrielpoca/replacer.nvim -- I don't see the need
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
-    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-    use("xiyaowong/telescope-emoji.nvim")
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+	use("xiyaowong/telescope-emoji.nvim")
 
 	-- TreeSitter
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
@@ -94,7 +94,7 @@ return packer.startup(function(use)
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 	-- Git
 	use("lewis6991/gitsigns.nvim")
-    use("TimUntersberger/neogit")
+	use("TimUntersberger/neogit")
 
 	use("kyazdani42/nvim-web-devicons")
 	use("kyazdani42/nvim-tree.lua")
@@ -112,25 +112,25 @@ return packer.startup(function(use)
 	use("nvim-pack/nvim-spectre")
 	use("ggandor/lightspeed.nvim")
 	use("caenrique/swap-buffers.nvim")
-    use("mrjones2014/smart-splits.nvim")
-    use("max397574/better-escape.nvim")
-    use("norcalli/nvim-colorizer.lua")
-    use("mrjones2014/legendary.nvim")
-    use("karb94/neoscroll.nvim")
-    use("tpope/vim-surround")
-    use("SmiteshP/nvim-gps")
-    use("folke/zen-mode.nvim")
-    use("mfussenegger/nvim-dap")
-    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
-    use("jamestthompson3/nvim-remote-containers")
-    use("dstein64/vim-startuptime")
-    use("antoinemadec/FixCursorHold.nvim")
-    use("nathom/filetype.nvim")
-    -- use{"theHamsta/nvim-dap-virtual-text", config = function() require("nvim-dap-virtual-text").setup() end}
-    -- TODO: Install following plugins
-    -- https://github.com/pwntester/octo.nvim
-    -- https://github.com/michaelb/sniprun
-    -- https://github.com/Pocco81/DAPInstall.nvim (Unmaintained)
+	use("mrjones2014/smart-splits.nvim")
+	use("max397574/better-escape.nvim")
+	use("norcalli/nvim-colorizer.lua")
+	use("mrjones2014/legendary.nvim")
+	use("karb94/neoscroll.nvim")
+	use("tpope/vim-surround")
+	use("SmiteshP/nvim-gps")
+	use("folke/zen-mode.nvim")
+	use("mfussenegger/nvim-dap")
+	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
+	use("jamestthompson3/nvim-remote-containers")
+	use("dstein64/vim-startuptime")
+	use("antoinemadec/FixCursorHold.nvim")
+	use("nathom/filetype.nvim")
+	-- use{"theHamsta/nvim-dap-virtual-text", config = function() require("nvim-dap-virtual-text").setup() end}
+	-- TODO: Install following plugins
+	-- https://github.com/pwntester/octo.nvim
+	-- https://github.com/michaelb/sniprun
+	-- https://github.com/Pocco81/DAPInstall.nvim (Unmaintained)
 	-- use("gelguy/wilder.nvim") --  TODO: flashing bugs in buffer when searching
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
